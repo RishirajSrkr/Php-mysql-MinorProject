@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --redColor: rgb(248, 44, 68);
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: white;
+            height: 62vh;
+            background: url("https://cdn.pixabay.com/photo/2020/04/17/08/09/blood-5053760_960_720.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+
+        li {
+            list-style: none;
+        }
+
+        a {
+            text-decoration: none;
+            color: white;
+
+        }
+
+        h1 {
+            margin-bottom: 15px;
+            color: var(--redColor);
+        }
+
+        .flex {
+            display: flex;
+            align-items: center;
+
+        }
+
+        /* .box {
+            margin-top: 100px;
+            height: 200px;
+            width: 200px;
+            background-color: red;
+        }
+
+        .box:hover {
+            transform: translateY(-15px);
+            transition: transform 0.2s;
+        } */
+
+
+
+        /* navbar----- */
+
+        .navbar {
+            justify-content: space-between;
+            background-color: var(--redColor);
+            position: fixed;
+            height: 70px;
+            width: 100%;
+            top: 0;
+            padding: 10px 100px;
+            z-index: 100;
+            box-shadow: 10px 5px 15px rgba(17, 0, 0, 0.093);
+        }
+
+        .navlinks {
+            justify-content: center;
+            gap: 60px;
+        }
+
+        .navlinks li:hover {
+            opacity: 0.7;
+            transition: all 0.2s;
+        }
+
+        .logo {
+            color: white;
+            font-size: 1.8rem;
+            font-weight: 600;
+        }
+
+        .container {
+            flex-direction: column;
+            align-items: start;
+            gap: 50px;
+            padding: 0px 70px;
+            margin-top: 130px;
+            margin-bottom: 70px;
+        }
+
+        .contact {
+            margin-top: 300px;
+            justify-content: center;
+            gap: 30px;
+            background-color: rgba(255, 255, 255, 0.208);
+            padding: 100px;
+            width: 60%;
+            border-radius: 15px;
+        }
+
+        .contact a {
+            background-color: white;
+            border: 2px solid black;
+            color: black;
+            padding: 25px 50px;
+            border-radius: 10px;
+            font-size: 1.2rem;
+        }
+
+        .contact a:hover {
+            border: 2px solid var(--redColor);
+            color: var(--redColor);
+            transform: translateY(-7px);
+            transition: all 0.2s;
+        }
+        .box{
+            align-items: center;
+            justify-content: center;
+        }
+
+    
+    </style>
+</head>
+
+<body>
+    <!-- nav section---- -->
+    <div class="navbar flex">
+        <div>
+            <p class="logo">BloodBank</p>
+        </div>
+
+        <div>
+            <ul class="navlinks flex">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">FAQ's</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+
+
+    </div>
+    <div class="box flex">
+        <div class="contact flex">
+            <a href="mailto:rishiraj.designs@gmail.com">Send us an email</a>
+            <a href="">Call Us</a>
+        </div>
+    </div>
+
+</body>
+
+</html>

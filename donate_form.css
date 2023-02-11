@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --redColor: rgb(248, 44, 68);
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #fafafa;
+    height: 80vh;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+
+}
+/* navbar----- */
+
+.navbar{
+    justify-content: space-between;
+    background-color:var(--redColor);
+    height: 70px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    padding: 10px 100px;
+    z-index: 100;
+    box-shadow: 10px 5px 15px rgba(17, 0, 0, 0.093);
+}
+.navlinks{
+    justify-content: center;
+    gap: 60px;
+}
+.navlinks li:hover{
+    opacity: 0.7;
+    transition: all 0.2s;
+}
+.logo{
+    color: white;
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+
+.main-form-container{
+    margin-top: 160px;
+    flex-direction: column;
+    justify-content: center;
+    gap: 40px;
+}
+.donate-form{
+gap: 40px;
+align-items: start;
+background-color: white;
+padding: 40px;
+border-radius: 10px;
+box-shadow: 0px 5px 40px rgba(0, 0, 0, 0.021);
+}
+
+.form-parts{
+    flex-direction: column;
+    align-items: start;
+    gap: 5px;
+}
+
+
+.form-parts input{
+    width: 400px;
+    padding: 13px 20px;
+    font-size: 1.1rem;
+    background-color: #fafafa;
+    border:2px solid #fafafa;
+    border-radius: 5px;
+    
+}
+.form-parts input:focus {
+    outline: none ! important;
+    border: 2px solid slateblue;
+}
+
+.form-right{
+    flex-direction: column;
+    align-items: start;
+    gap: 40px;
+}
+.form-left{
+    flex-direction: column;
+    gap: 20px;
+}
+
+textarea{
+    margin-top: 10px;
+    resize: none;
+    background-color: #fafafa;
+    border: none;
+    width: 400px;
+    border-radius: 5px;
+    height: 180px;
+    
+}
+textarea:focus{
+    outline:none !important;
+    border: 2px solid slateblue;
+}
+.bottom_btn{
+    border: 2px solid black;
+    padding: 13px 30px;
+    font-size: 1.2rem;
+    background-color: transparent;
+    border-radius: 50px;
+}
+.bottom_btn:hover{
+    border: 2px solid var(--redColor);
+    color: var(--redColor);
+    cursor: pointer;
+    transform: translateY(-5px);
+    transition: all 0.2s;
+
+   
+
+}

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ThankYou</title>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --redColor: rgb(248, 44, 68);
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+
+        li {
+            list-style: none;
+        }
+
+        a {
+            text-decoration: none;
+            color: white;
+
+        }
+
+        .flex {
+            display: flex;
+            align-items: center;
+
+        }
+
+        /* navbar----- */
+
+        .navbar {
+            justify-content: space-between;
+            background-color: var(--redColor);
+            height: 70px;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            padding: 10px 100px;
+            z-index: 100;
+            box-shadow: 10px 5px 15px rgba(17, 0, 0, 0.093);
+        }
+
+        .navlinks {
+            justify-content: center;
+            gap: 60px;
+        }
+
+        .navlinks li:hover {
+            opacity: 0.7;
+            transition: all 0.2s;
+        }
+
+        .logo {
+            color: white;
+            font-size: 1.8rem;
+            font-weight: 600;
+        }
+
+        .text h1 {
+            margin-top: 20px;
+            margin-bottom: 40px;
+            font-size: 3rem;
+            text-align: center;
+        }
+        .text h3{
+            margin-top: 250px;
+            font-size: 1.6rem;
+        }
+        .text p{
+            max-width: 800px;
+            text-align:center;
+        }
+        .text{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- nav section---- -->
+    <div class="navbar flex">
+        <div>
+            <p class="logo">BloodBank</p>
+        </div>
+        <div>
+            <ul class="navlinks flex">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">FAQ's</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+
+
+    <div class="text">
+        <h3>"We will contact you in 24 hrs"</h3>
+        <h1>Once a blood donor is always a lifesaver.</h1>
+        <p>Every blood donor is an asset to the nation who saves people’s lives, and you’re one of them. Thank you for your regular contribution to our blood donation drive. We appreciate your efforts.</p>
+    </div>
+
+
+</body>
+
+</html>

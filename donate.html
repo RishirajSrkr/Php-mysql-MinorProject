@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="donate_form.css"> -->
+
+    <title>Donate</title>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --redColor: rgb(248, 44, 68);
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #fafafa;
+    height: 80vh;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+
+}
+/* navbar----- */
+
+.navbar{
+    justify-content: space-between;
+    background-color:var(--redColor);
+    height: 70px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    padding: 10px 100px;
+    z-index: 100;
+    box-shadow: 10px 5px 15px rgba(17, 0, 0, 0.093);
+}
+.navlinks{
+    justify-content: center;
+    gap: 60px;
+}
+.navlinks li:hover{
+    opacity: 0.7;
+    transition: all 0.2s;
+}
+.logo{
+    color: white;
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+
+.main-form-container{
+    margin-top: 160px;
+    flex-direction: column;
+    justify-content: center;
+    gap: 40px;
+}
+.donate-form{
+gap: 40px;
+align-items: start;
+background-color: white;
+padding: 40px;
+border-radius: 10px;
+box-shadow: 0px 5px 40px rgba(0, 0, 0, 0.021);
+}
+
+.form-parts{
+    flex-direction: column;
+    align-items: start;
+    gap: 5px;
+}
+
+
+.form-parts input{
+    width: 400px;
+    padding: 13px 20px;
+    font-size: 1.1rem;
+    background-color: #fafafa;
+    border:2px solid #fafafa;
+    border-radius: 5px;
+    
+}
+.form-parts input:focus {
+    outline: none ! important;
+    border: 2px solid slateblue;
+}
+
+.form-right{
+    flex-direction: column;
+    align-items: start;
+    gap: 40px;
+}
+.form-left{
+    flex-direction: column;
+    gap: 20px;
+}
+
+textarea{
+    margin-top: 10px;
+    resize: none;
+    background-color: #fafafa;
+    border: none;
+    width: 400px;
+    border-radius: 5px;
+    height: 180px;
+    font-size: 1.1rem;
+padding: 20px;
+    
+}
+textarea:focus{
+    outline:none !important;
+    border: 2px solid slateblue;
+}
+.bottom_btn{
+    border: 2px solid black;
+    padding: 13px 30px;
+    font-size: 1.2rem;
+    background-color: transparent;
+    border-radius: 50px;
+}
+.bottom_btn:hover{
+    border: 2px solid var(--redColor);
+    color: var(--redColor);
+    cursor: pointer;
+    transform: translateY(-5px);
+    transition: all 0.2s;
+
+   
+
+}
+    </style>
+</head>
+
+<body>
+
+       <!-- nav section---- -->
+       <div class="navbar flex">
+        <div>
+            <p class="logo">BloodBank</p>
+        </div>
+        <div>
+            <ul class="navlinks flex">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">FAQ's</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+
+    </div>
+
+
+    <form action="donate.php" method="post">
+
+        
+        <div class="flex main-form-container">
+            <div>
+                <div class="donate-form flex">
+
+                    <div class="form-left flex">
+                        <div class="form-parts flex">
+                            <label for="name">Enter your Name</label>
+                            <input type="text" id="name" name="name">
+                        </div>
+
+
+                        <div class="form-parts flex">
+                            <label for="number">Enter your Phone Number</label>
+                            <input type="tel" id="number" name="number">
+                        </div>
+
+
+                        <div class="form-parts flex">
+                            <label for="age">Enter your Age</label>
+                            <input type="number" name="age" id="age">
+
+                        </div>
+
+
+                    </div>
+
+
+                    <div class="form-right flex">
+                        <div>
+                            <label for="donationHistory">Have you done a blood donation before?</label>
+
+                            <label>
+                                <input type="radio" name="donationHistory" value="No" checked>
+                                No
+                            </label>
+
+                            <label>
+                                <input type="radio" name="donationHistory" value="Yes">
+                                Yes
+                            </label>
+
+                        </div>
+
+
+                        <div class="form-parts-right">
+                            <div>
+                                <label for="disease">Do you have any Disease?</label>
+                                <label>
+                                    <input type="radio" name="disease" value="No" checked>
+                                    No
+                                </label>
+
+                                <label>
+                                    <input type="radio" name="disease" value="Yes" id="yes">
+                                    Yes
+                                </label>
+                            </div>
+
+
+                            <div>
+                                <label for="description"></label>
+                                <textarea id="description" name="description"></textarea>
+
+                            </div>
+
+
+                        </div>
+
+
+
+                    </div>
+
+
+
+                </div>
+            </div>
+
+
+            <div>
+                <a href="response2.html">
+                    <!-- <input type="button" value="Submit" class="bottom_btn"> -->
+                    <button class="bottom_btn">Submit</button>
+                </a>
+            </div>
+        </div>
+
+    </form>
+</body>
+
+</html>
